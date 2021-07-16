@@ -1,0 +1,18 @@
+{
+  "name": "iasync-cli",
+  "version": "1.0.0",
+  "description": "Syncs local directories to the Internet Archive per a data format",
+  "homepage": "https://github.com/msikma/iasync",
+  "repository": "git+https://github.com/msikma/iasync",
+  "author": "Michiel Sikma <michiel@sikma.org>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "cheerio": "^1.0.0-rc.3",
+    "dada-cli-tools": "^1.0.0",
+    "iasync-lib": "^1.0.0"
+  }
+}

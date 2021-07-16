@@ -1,0 +1,6 @@
+# Default ignore file for iasync items, used when none is specified.
+#
+# The file patterns listed here will not be included when syncing an item.
+# The syntax is the same as for .gitignore files.
+
+.DS_Store

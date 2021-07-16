@@ -1,0 +1,20 @@
+{
+  "name": "iasync-lib",
+  "version": "1.0.0",
+  "description": "Syncs local directories to the Internet Archive per a data format",
+  "homepage": "https://github.com/msikma/iasync",
+  "repository": "git+https://github.com/msikma/iasync",
+  "author": "Michiel Sikma <michiel@sikma.org>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "dependencies": {
+    "@gerhobbelt/gitignore-parser": "^0.2.0-9",
+    "cheerio": "^1.0.0-rc.3",
+    "csv-stringify": "^5.6.2",
+    "dada-cli-tools": "^1.0.0",
+    "fast-glob": "^3.2.7",
+    "ini": "^2.0.0"
+  }
+}
