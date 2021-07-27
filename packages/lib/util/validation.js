@@ -13,16 +13,16 @@ const { languageCodes } = require('./marc21')
 
 /**
  * Checks whether a given string is a valid identifier.
- * 
+ *
  * See the following description from the Internet Archive:
- * 
+ *
  * Each item at Internet Archive has an identifier. An identifier is composed of a unique
  * combination of alphanumeric characters (limited to ASCII), underscores (_), dashes (-),
  * or periods (.). The first character of an identifier must be alphanumeric (e.g. it cannot
  * start out with an underscore, dash, or period). The maximum length of an identifier is 100
  * characters, but we generally recommend that identifiers be between 5 and 80 characters
  * in length.
- * 
+ *
  * See also: <https://archive.org/services/docs/api/metadata-schema/index.html#archive-org-identifiers>
  */
 const isValidIdentifier = identifier => {
@@ -47,7 +47,7 @@ const isValidMediatype = type => {
 
 /**
  * Checks whether a given date is valid.
- * 
+ *
  * A date should be in the format YYYY-MM-DD, YYYY-MM, or YYYY.
  */
 const isValidDate = dateStr => {
@@ -127,7 +127,7 @@ const getSyncDataErrorNotes = (data) => {
 }
 
 /**
- * Runs validation checks on a given sync item's data file (the .iasync.data.json file).
+ * Runs validation checks on a given sync item's data file (the iasync.data.json file).
  */
 const validateSyncData = (data) => {
   const notes = getSyncDataErrorNotes(data)

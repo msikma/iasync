@@ -4,7 +4,7 @@
 const static = require('../static')
 const { getUA } = require('../static/ua')
 
-/** "Standard" metadata items that always have only one value. All mandated to be present in .iasync.data.json. */
+/** "Standard" metadata items that always have only one value. All mandated to be present in iasync.data.json. */
 const singularMetadataKeys = ['title', 'description', 'creator', 'date', 'language', 'mediatype']
 
 /** Primary collections used on the Internet Archive. */
@@ -53,7 +53,7 @@ const getSpecialFields = async (sync) => {
 
 /**
  * Returns a list of ia commands to run to get an item synchronized with the local files.
- * 
+ *
  * TODO: explain more
  */
 const createCommands = async (sync) => {
@@ -68,7 +68,7 @@ const createCommands = async (sync) => {
 
   const filesLocal = files.map(fn => `${basedir}/${fn}`).map(wrapQuotes)
   const filesRemote = files.map(wrapQuotes)
-  
+
   const subjectFields = wrapArray(metadata.subject)
   const collectionFields = addSpecialCollections(wrapArray(metadata.collection), item)
   const customFields = Object.entries(fields).map(([key, values]) => wrapArray(values).map(value => [key, value])).flat()

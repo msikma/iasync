@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "Syncs local directories to the Internet Archive per a data format",
   "private": true,
-  "keywords": [
-  ],
+  "keywords": [],
   "workspaces": [
     "packages/*"
   ],
@@ -24,6 +23,5 @@
   "devDependencies": {
     "jest": "^24.9.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

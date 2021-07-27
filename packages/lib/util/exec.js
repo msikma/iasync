@@ -1,13 +1,13 @@
 // iasync-lib <https://github.com/msikma/iasync>
 // © MIT license
 
-const { cmdExec } = require('dada-cli-tools/util/exec')
+const { execCmd } = require('dada-cli-tools/util/exec')
 
 /**
- * Runs cmdExec() and treats the result as JSON.
+ * Runs execCmd() and treats the result as JSON.
  */
 const execGetJSON = async (cmd) => {
-  const res = await cmdExec(cmd)
+  const res = await execCmd(cmd)
   const out = JSON.parse(res.stdout.trim())
   return out
 }

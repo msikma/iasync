@@ -1,7 +1,7 @@
 // iasync-lib <https://github.com/msikma/iasync>
 // © MIT license
 
-const { cmdExec } = require('dada-cli-tools/util/exec')
+const { execCmd } = require('dada-cli-tools/util/exec')
 const static = require('./index')
 
 const cache = {
@@ -13,7 +13,7 @@ const cache = {
  */
 const getUA = async () => {
   if (cache.iaVersion == null) {
-    cache.iaVersion = await cmdExec(`ia -v`)
+    cache.iaVersion = await execCmd(`ia -v`)
   }
   return `${static.IASYNC_UA} (ia ${cache.iaVersion.stdout.trim()})`
 }
